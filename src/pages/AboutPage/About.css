@@ -1,0 +1,48 @@
+.about_title{
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    color: white;
+    /* font-size: 64px; */
+    font-size: 3.3vw;
+}
+
+.about_title2{
+    position: absolute;
+    top: 36%;
+    left: 12%;
+    color: white;
+    /* font-size: 40px; */
+    font-size: 2vw;
+    width: 800px;
+}
+.About_Section{
+    /* height: 900px; */
+    height: 46.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.about_sub_title2{
+    position: absolute;
+    top: 55%;
+    left: 12%;
+    color: white;
+    font-size: 14px;
+    font-size: 0.75vw;
+    width: 800px;
+}
+.about_info_img{
+    /* width: 680px; */
+    width: 35.5vw;
+    /* margin-left: 240px; */
+    margin-left: 12.5vw;
+}
+.about_info{
+    /* width: 680px; */
+    width: 35.5vw;
+    /* margin-left: 80px; */
+    margin-left: 4.1vw;
+    /* font-size: 32px; */
+    font-size: 1.67vw;
+}

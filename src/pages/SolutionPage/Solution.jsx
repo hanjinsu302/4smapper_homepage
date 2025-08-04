@@ -1,0 +1,202 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import './Solution.css'
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+
+// 이미지 import
+import beforeImg from '../../images/solution/CfSM_before.png';
+import afterImg from '../../images/solution/CfSM_after.png';
+import arrowIcon from '../../images/solution/icon_arrow.png';
+import captureImg from '../../images/solution/CfSM_capture.png';
+import combineImg from '../../images/solution/CfSM_combine.png';
+import processImg from '../../images/solution/CfSM_process.png';
+import monitorImg from '../../images/solution/CfSM_monitor.png';
+import hdSafetyMapImg from '../../images/solution/hd_safety_map.png';
+import automaticDataProcessingGif from '../../images/solution/automatic_data_processing.gif';
+import automaticPlatformImg from '../../images/solution/automatic_platfrom.png';
+
+const Solution = () => {
+  return (
+    <>
+      <Header />
+      <div className='Header_Block'></div>
+      <div className="solution_banner">SOLUTIONS</div>
+      <div className="container">
+        <div className="solution_section1">
+          <div className="solution_section1_title">
+            <div className="circle_green"></div>
+            <div>Car-free Street Mapping(CfSM)</div>
+          </div>
+          <div className="solution_section1_img_contents">
+            <div>
+              <div>
+                <div className="solution_section1_img_contents_title">Before</div>
+                <div className="before">
+                  <img src={beforeImg} alt="CfSM 전 이미지" />
+                </div>
+              </div>
+              <div className="icon_arrow">
+                <img src={arrowIcon} alt="화살표 아이콘" />
+              </div>
+              <div>
+                <div className="solution_section1_img_contents_title">After</div>
+                <div className="after">
+                  <img src={afterImg} alt="CfSM 후 이미지" />
+                </div>
+              </div>
+            </div>
+            <div className="solution_section1_description">
+              <div>
+                Deep Learning and Drone-based Automated Image Removal Solution for
+                Vehicles on the Road.
+              </div>
+              <div>
+                An innovative service that will replace Automated traditional road
+                monitoring system.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="solution_section2">
+          <div className="vertical_line"><hr /></div>
+          <div className="solution_section2_step1">
+            <div className="solution_section2_step1_title">
+              <div className="circle_blue"></div>
+              <div>Step 1</div>
+            </div>
+            <div className="solution_section2_step1_content">
+              <div><img src={captureImg} alt="CfSM 캡쳐" /></div>
+              <div>Capture</div>
+              <div className="solution_section2_step1_description">
+                <div>
+                  Capture enough data to create a dataset using the drone.
+                </div>
+                <div>The data type must be in image format.</div>
+              </div>
+            </div>
+          </div>
+          <div className="solution_section2_step1">
+            <div className="solution_section2_step1_title">
+              <div className="circle_blue"></div>
+              <div>Step 2</div>
+            </div>
+            <div className="solution_section2_step1_content">
+              <div><img src={combineImg} alt="CfSM 결합" /></div>
+              <div>Combine</div>
+              <div className="solution_section2_step1_description">
+                <div>
+                  Combine tile data into a single road image for processing.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="solution_section2_step1">
+            <div className="solution_section2_step1_title">
+              <div className="circle_blue"></div>
+              <div>Step 3</div>
+            </div>
+            <div className="solution_section2_step1_content">
+              <div><img src={processImg} alt="CfSM 프로세스" /></div>
+              <div>Process</div>
+              <div className="solution_section2_step1_description">
+                <div>
+                  Run the dataset through the CfSM solution to remove cars and
+                  shadows. <br />
+                  The result will be a clean, undistorted road image.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="solution_section2_step1">
+            <div className="solution_section2_step1_title">
+              <div className="circle_blue"></div>
+              <div>Step 4</div>
+            </div>
+            <div className="solution_section2_step1_content">
+              <div><img src={monitorImg} alt="CfSM 모니터링" /></div>
+              <div>Monitor</div>
+              <div className="solution_section2_step1_description">
+                <div>
+                  Monitor the status of the road using CfSM processed image.
+                  <br />
+                  Detect the condition of the road by running an analysis on the
+                  server.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="solution_section3">
+          <div>
+            <div className="solution_section3_title">
+              <div className="circle_green"></div>
+              <div>3D MODELING</div>
+            </div>
+          </div>
+          <div>
+            <div className="solution_section3_description">
+              Uploads the images taken for building 3D spatial data to the
+              platform with simple 'drag&drop'.
+            </div>
+            <div className="solution_section3_description">
+              The whole process automated with a parallel processing-based network
+              provides various data analysis and reports.
+            </div>
+          </div>
+        </div>
+        <div className="solution_section4">
+          <div>
+            <div className="solution_section4_title">
+              <div className="circle_green"></div>
+              <div>HD SAFETY MAP</div>
+            </div>
+            <div className="solution_section4_description">
+              AfGG solution creates an High-Definition Safety Map with road
+              marking information.
+            </div>
+            <div className="solution_section4_description">
+              AfGG solution utilizes DTM ML to auto label the road markings
+              (double yellow line, crosswalk, stop line, etc.) or detect risk
+              factors (pothole, crack, etc.) to gather road information.
+            </div>
+          </div>
+          <div>
+            <img src={hdSafetyMapImg} alt="hd_safety_map 이미지" />
+          </div>
+        </div>
+        <div className="solution_section5">
+          <div>
+            <div>
+              <div className="solution_section5_title">
+                <div className="circle_green"></div>
+                <div>AUTOMATIC DATA PROCESSING</div>
+              </div>
+              <div className="solution_section5_description">
+                Distributes data processing step using the Node to automate the
+                processing.
+              </div>
+            </div>
+            <div className="solution_section5_img_contents">
+              <div>
+                <img
+                  src={automaticDataProcessingGif}
+                  alt="automatic_data_processing 이미지"
+                />
+              </div>
+              <div>
+                <img
+                  src={automaticPlatformImg}
+                  alt="automatic_platform 이미지"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default Solution;

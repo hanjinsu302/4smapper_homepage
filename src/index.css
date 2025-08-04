@@ -1,13 +1,41 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Pretendard-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.Section{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(120, 120, 120);
+}
+
+.Banner{
+  width: 100%;
+  position: relative;
+ 
+}
+
+.Banner_img{
+  width: 100%;
+}
+.img{
+  margin: 0px;
+}
+.Header_Block{
+  width: 100%;
+  height: 4vw;
 }

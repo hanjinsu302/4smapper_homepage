@@ -1,0 +1,12 @@
+{
+    "title": "홈페이지",
+    "nav": {
+      "home": "홈",
+      "platform": "플랫폼",
+      "solution": "솔루션",
+      "products": "프로덕트",
+      "about": "회사소개",
+      "contact": "CONTACT"
+    }
+  }
+  

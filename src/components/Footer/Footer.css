@@ -1,0 +1,70 @@
+.FooterContainer{
+    width:100%;
+    /* height: 300px; */
+    height: 15.6vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FooterContents{
+    /* width: 1440px; */
+    width: 75vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+   
+}
+.footer_smlogo{
+    /* width: 178px; */
+    width: 9.3vw;
+}
+
+.footer_context{
+    width: 100%;
+    /* height: 200px; */
+    height: 10.5vw;
+    align-items: center;
+}
+.footer_test{
+    width: 100%;
+    /* height: 150px; */
+    height: 7.8vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.footer_line{
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid white;
+    /* font-size: 14px; */
+    font-size: 0.73vw;
+}
+.footer_info_title{
+    display: flex;
+    flex-direction: column;
+    gap:0.8vw;
+    margin-right: 25px;
+    font-size: 0.9vw;
+}
+.footer_info{
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+    /* font-size: 14px; */
+    font-size: 0.73vw;
+}
+
+.footer_link{
+    display: flex;
+    flex-direction: column;
+    /* gap:15px; */
+    gap:0.8vw;
+    /* font-size: 18px; */
+    font-size: 0.9vw;
+    position: absolute;
+    right: 0px;
+}

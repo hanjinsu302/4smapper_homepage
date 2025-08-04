@@ -1,0 +1,116 @@
+.Contact_Container{
+    width: 100%;
+    /* height: 1000px; */
+    height: 90vh;
+    position: relative; /* 추가 */
+}
+.Contact_bg{
+    width: 100%;
+    /* height: 1000px; */
+    height: 90vh;
+}
+.Contact_Contents{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    height: 40vw;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Contact_Content{
+    /* width: 1440px; */
+    width: 65vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Contact_Info{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    color: white;
+}
+.Contact_Title{
+    font-size: 1.8vw;
+    font-weight: 700;
+
+}
+.Contact_Description{
+    font-size: 0.8vw;
+    line-height: 10px;
+}
+
+.Contact_Form{
+    /* width: 473px;
+    height: 617px; */
+    width: 22vw;
+    height: 27.5vw;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    padding: 2vw;
+}
+.Nameform{
+    width: 100%;
+    height: 96px;
+    /* height: 4vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.Namefield{
+    width: 100%;
+    height: 55px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.Messageform{
+    width: 100%;
+    /* height: 316px; */
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.Messagefield{
+    width: 100%;
+    height: 275px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.SendBtn{
+    width: 100%;
+    /* height: 60px; */
+    height: 2.8vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.Contact_Header{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: 18px;
+}
+
+.spot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #FE2B2B;
+}
+
+

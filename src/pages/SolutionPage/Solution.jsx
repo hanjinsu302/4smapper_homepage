@@ -17,6 +17,31 @@ import automaticDataProcessingGif from '../../images/solution/automatic_data_pro
 import automaticPlatformImg from '../../images/solution/automatic_platfrom.png';
 
 const Solution = () => {
+  function _3dmapping1() {
+    return (
+        <div>
+          <iframe
+              width="640"
+              height="480"
+              src="https://sketchfab.com/models/18a444fe6d0348958ded01f846269f81/embed"
+              frameBorder="0"
+              allowFullScreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true">
+          </iframe>
+          <p style={{ fontSize: '13px', fontWeight: 'normal', margin: '5px', color: '#4A4A4A' }}>
+            <a
+                href="https://sketchfab.com/models/18a444fe6d0348958ded01f846269f81?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: 'bold', color: '#1CAAD9' }}
+            >
+              Surisan-20161123 Simplified 3d Mesh
+            </a>
+          </p>
+        </div>
+    );
+  }
   return (
     <>
       <Header />
@@ -128,23 +153,31 @@ const Solution = () => {
           </div>
         </div>
         <div className="solution_section3">
-          <div>
+          <div className='Solution_section3_ContentsBox'>
             <div className="solution_section3_title">
               <div className="circle_green"></div>
               <div>3D MODELING</div>
             </div>
+          
+            <div className="flex-item">{_3dmapping1()}</div>
+            
           </div>
           <div>
-            <div className="solution_section3_description">
-              Uploads the images taken for building 3D spatial data to the
-              platform with simple 'drag&drop'.
-            </div>
-            <div className="solution_section3_description">
-              The whole process automated with a parallel processing-based network
-              provides various data analysis and reports.
-            </div>
+            <div>
+              <div className="solution_section3_description">
+                Uploads the images taken for building 3D spatial data to the
+                platform with simple 'drag&drop'.
+              </div>
+              <div className="solution_section3_description">
+                The whole process automated with a parallel processing-based network
+                provides various data analysis and reports.
+              </div>
           </div>
+          </div>
+          
         </div>
+
+
         <div className="solution_section4">
           <div>
             <div className="solution_section4_title">

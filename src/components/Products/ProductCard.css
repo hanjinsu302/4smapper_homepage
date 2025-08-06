@@ -1,0 +1,47 @@
+.Products_section2_items {
+  display: flex;
+  justify-content: center;
+}
+
+.Products_section2_items > div {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth; /* 부드러운 스크롤 */
+  padding: 40px;
+}
+.Products_section2_items > div::-webkit-scrollbar {
+  display: none;
+}
+.Products_section2_items > div::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.Products_section2_items > div > div {
+  border-radius: 32px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 0 16px 8px rgba(4, 161, 255, 0.05);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.Products_section2_items > div > div:hover {
+  box-shadow: 0 0 16px 8px rgba(4, 161, 255, 0.1);
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+.Products_section2_items img {
+  width: 450px;
+  height: 300px;
+}
+.Products_section2_items_title {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.Products_section2_items_description {
+  font-size: 14px;
+}

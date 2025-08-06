@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import { useTranslation } from 'react-i18next';
 import './Solution.css'
 import Header from '../../components/Header/Header';
@@ -16,7 +17,129 @@ import hdSafetyMapImg from '../../images/solution/hd_safety_map.png';
 import automaticDataProcessingGif from '../../images/solution/automatic_data_processing.gif';
 import automaticPlatformImg from '../../images/solution/automatic_platfrom.png';
 
+
+const ThreeDModels = [
+  {
+    id: 1,
+    iframe: (
+      <iframe
+        width="640"
+        height="480"
+        src="https://sketchfab.com/models/18a444fe6d0348958ded01f846269f81/embed"
+        frameBorder="0"
+        allowFullScreen
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+      ></iframe>
+    ),
+    caption: (
+      <p className="model-caption">
+        <a
+          href="https://sketchfab.com/models/18a444fe6d0348958ded01f846269f81"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Surisan-20161123 Simplified 3d Mesh
+        </a>
+      </p>
+    ),
+  },
+  {
+    id: 2,
+    iframe: (
+      <iframe
+        width="640"
+        height="480"
+        src="https://sketchfab.com/models/fedb5948d35b490d9ce0c65f017cb86f/embed"
+        frameBorder="0"
+        allowFullScreen
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+      ></iframe>
+    ),
+    caption: (
+      <p className="model-caption">
+        <a
+          href="https://sketchfab.com/models/fedb5948d35b490d9ce0c65f017cb86f"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          DJI House 3D Mesh
+        </a>
+        by{' '}
+        <a
+          href="https://sketchfab.com/stefano0620"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          stefano0620
+        </a>
+      </p>
+    ),
+  },
+  {
+    id: 3,
+    iframe: (
+      <iframe
+        width="640"
+        height="480"
+        src="https://sketchfab.com/models/66f365b83324486cb408c622714c2844/embed"
+        frameBorder="0"
+        allowFullScreen
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+      ></iframe>
+    ),
+    caption: (
+      <p className="model-caption">
+        <a
+          href="https://sketchfab.com/models/66f365b83324486cb408c622714c2844"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Model Building by Dji with P (3D Mesh)
+        </a>
+      </p>
+    ),
+  },
+  {
+    id: 4,
+    iframe: (
+      <iframe
+        width="640"
+        height="480"
+        src="https://sketchfab.com/models/71f47e1fbd1f48c2833b6b10afa34efe/embed"
+        frameBorder="0"
+        allowFullScreen
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+      ></iframe>
+    ),
+    caption: (
+      <p className="model-caption">
+        <a
+          href="https://sketchfab.com/models/71f47e1fbd1f48c2833b6b10afa34efe"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Hansei-20161207 Simplified 3d Mesh
+        </a>
+      </p>
+    ),
+  },
+];
+
 const Solution = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? ThreeDModels.length - 1 : prev - 1));
+  };
+
+  const next = () => {
+    setCurrentIndex((prev) => (prev === ThreeDModels.length - 1 ? 0 : prev + 1));
+  };
+
   function _3dmapping1() {
     return (
         <div>
@@ -42,6 +165,130 @@ const Solution = () => {
         </div>
     );
   }
+  function _3dmapping2() {
+    return (
+        <div>
+          <iframe
+              width="640"
+              height="480"
+              src="https://sketchfab.com/models/fedb5948d35b490d9ce0c65f017cb86f/embed"
+              frameBorder="0"
+              allowFullScreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true">
+          </iframe>
+          <p style={{ fontSize: '13px', fontWeight: 'normal', margin: '5px', color: '#4A4A4A' }}>
+            <a
+                href="https://sketchfab.com/models/fedb5948d35b490d9ce0c65f017cb86f?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+              DJI House 3D Mesh
+            </a>
+            by
+            <a
+                href="https://sketchfab.com/stefano0620?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+              stefano0620
+            </a>
+            on
+            <a
+                href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+              Sketchfab
+            </a>
+          </p>
+        </div>
+    );
+  }
+  function _3dmapping3() {
+    return (
+        <div>
+          <iframe
+              width="640"
+              height="480"
+              src="https://sketchfab.com/models/66f365b83324486cb408c622714c2844/embed"
+              frameBorder="0"
+              allowFullScreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              onWheel={() => {}}>
+          </iframe>
+          <p style={{ fontSize: '13px', fontWeight: 'normal', margin: '5px', color: '#4A4A4A' }}>
+            <a
+                href="https://sketchfab.com/models/66f365b83324486cb408c622714c2844?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+              Model Building by Dji with P (3D Mesh)
+            </a>
+            by
+            <a
+                href="https://sketchfab.com/stefano0620?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+              stefano0620
+            </a>
+            on
+            <a
+                href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+              Sketchfab
+            </a>
+          </p>
+        </div>
+    );
+  }
+  function _3dmapping4() {
+    return (
+        <div>
+          <iframe
+              width="640"
+              height="480"
+              src="https://sketchfab.com/models/71f47e1fbd1f48c2833b6b10afa34efe/embed"
+              frameBorder="0"
+              allowFullScreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              onWheel={() => {}}>
+          </iframe>
+          <p style={{ fontSize: '13px', fontWeight: 'normal', margin: '5px', color: '#4A4A4A' }}>
+            <a
+                href="https://sketchfab.com/models/71f47e1fbd1f48c2833b6b10afa34efe?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+              Hansei-20161207 Simplified 3d Mesh
+            </a>
+            by
+            <a
+                href="https://sketchfab.com/stefano0620?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+              stefano0620
+            </a>
+            on
+            <a
+                href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+              Sketchfab
+            </a>
+          </p>
+        </div>
+    );
+  }
+
+ 
   return (
     <>
       <Header />
@@ -153,29 +400,45 @@ const Solution = () => {
           </div>
         </div>
         <div className="solution_section3">
-          <div className='Solution_section3_ContentsBox'>
-            <div className="solution_section3_title">
-              <div className="circle_green"></div>
-              <div>3D MODELING</div>
-            </div>
-          
-            <div className="flex-item">{_3dmapping1()}</div>
-            
-          </div>
-          <div>
-            <div>
-              <div className="solution_section3_description">
-                Uploads the images taken for building 3D spatial data to the
-                platform with simple 'drag&drop'.
-              </div>
-              <div className="solution_section3_description">
-                The whole process automated with a parallel processing-based network
-                provides various data analysis and reports.
-              </div>
-          </div>
-          </div>
-          
+      <div className="Solution_section3_ContentsBox">
+        <div className="solution_section3_title">
+          <div className="circle_green"></div>
+          <div>3D MODELING</div>
         </div>
+        <div className="carousel-container">
+          <div className="carousel-container_box">
+          <button className="nav-button" onClick={prev}>
+            〈
+          </button>
+          <div className="model-display">
+            {ThreeDModels[currentIndex].iframe}
+            {ThreeDModels[currentIndex].caption}
+          </div>
+          <button className="nav-button" onClick={next}>
+            〉
+          </button>
+
+          </div>
+         
+          <div className="indicator">
+        {ThreeDModels.map((_, idx) => (
+          <span
+            key={idx}
+            className={`dot ${idx === currentIndex ? 'active' : ''}`}
+          ></span>
+        ))}
+      </div>
+        </div>
+      </div>
+      
+
+      <div className="solution_section3_description">
+        Uploads the images taken for building 3D spatial data to the platform with simple 'drag&drop'.
+      </div>
+      <div className="solution_section3_description">
+        The whole process automated with a parallel processing-based network provides various data analysis and reports.
+      </div>
+    </div>
 
 
         <div className="solution_section4">

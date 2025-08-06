@@ -150,17 +150,22 @@ body {
 
 /* section1 */
 .solution_section1_title {
+  background-color: #1CAAD9;
   display: flex;
   width: 100%;
-  height: 90px;
+  /* height: 90px; */
+  height: 4.7vw;
   align-items: center;
 }
 .circle_green {
-  width: 15px;
-  height: 15px;
+  /* width: 15px; */
+  width: 0.75vw;
+  /* height: 15px; */
+  height: 0.75vw;
   border-radius: 50%;
   background-color: #4fd782;
-  margin-right: 16px;
+  /* margin-right: 16px; */
+  margin-right: 0.84vw;
 }
 
 .solution_section1_title > div:last-child {
@@ -169,7 +174,8 @@ body {
   color: #ffffff;
 }
 .solution_section1_img_contents {
-  padding-top: 100px;
+  /* padding-top: 100px; */
+  padding-top: 5.2vw;
 }
 
 .solution_section1_img_contents > div:first-child {
@@ -184,8 +190,10 @@ body {
   color: #ffffff;
 }
 .solution_section1_img_contents img {
-  width: 640px;
-  height: 588px;
+  /* width: 640px; */
+  width: 33.35vw;
+  /* height: 588px; */
+  height: 30.6vw;
   padding-top: 16px;
 }
 
@@ -211,8 +219,10 @@ body {
   transform: translate(-50%, -50%);
 }
 .icon_arrow > img {
-  width: 140px;
-  height: 120px;
+  /* width: 140px; */
+  width: 7.3vw;
+  /* height: 120px; */
+  height: 6.3vw;
 }
 
 /* section2 */
@@ -307,6 +317,68 @@ body {
 .solution_section3_description {
   font-size: 32px;
   color: #ffffff;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.carousel-container_box{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.model-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-button {
+  background-color: #202124;
+  border: none;
+  font-size: 32px;
+  color: #888;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: color 0.2s ease;
+}
+.nav-button:hover {
+  color: #ffffff;
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #888;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.dot.active {
+  background-color: #ffffff;
+}
+
+.model-caption {
+  font-size: 13px;
+  font-weight: normal;
+  margin: 5px;
+  color: #4A4A4A;
+}
+.model-caption a {
+  font-weight: bold;
+  color: #1CAAD9;
+  margin-right: 5px;
 }
 
 /* section4 */

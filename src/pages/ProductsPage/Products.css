@@ -1,13 +1,15 @@
 .Banner_img {
-  width: 100vw;
-  height: 600px;
+  width: 100%;
+  /* height: 600px; */
+  height: 31.2vw;
   background-size: cover;
 }
 .Products_Banner {
   position: relative;
 }
 .Products_Banner > div {
-  font-size: 64px;
+  /* font-size: 64px; */
+  font-size: 3.34vw;
   font-weight: bold;
   color: #ffffff;
   position: absolute;
@@ -17,11 +19,13 @@
 }
 
 .container {
-  width: 1440px;
+  /* width: 1440px; */
+  width: 75vw;
   display: flex;
   flex-direction: column;
   justify-self: center;
-  margin-top: 200px;
+  /* margin-top: 200px; */
+  margin-top: 10.45vw;
 }
 .Products_section_title {
   display: flex;
@@ -40,18 +44,84 @@
 }
 
 .Products_section1_description {
-  width: 960px;
-  height: 112px;
-  font-size: 40px;
+  /* width: 960px; */
+  width: 50vw;
+  /* height: 112px; */
+  height: 5.83vw;
+  /* font-size: 40px; */
+  font-size: 2.08vw;
   font-weight: bold;
   color: #ffffff;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
+  padding-bottom: 4.2vw;
 }
 .Products_section1_items_category {
   display: flex;
   justify-content: center;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
+  margin-bottom: 2.49vw;
 }
+
+.Products_section1_items_categoryBox {
+  width: 100%;
+  min-height: 500px;
+  /* padding: 20px; */
+  padding: 1.05vw;
+  box-sizing: border-box;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 40px; */
+  gap: 2.1vw; 
+}
+
+.image-card {
+  /* padding: 10px; */
+  padding: 0.5vw;
+  /* border-radius: 8px; */
+  border-radius: 0.2vw;
+  color: white;
+  /* font-size: 32px; */
+  font-size: 1.65vw;
+  line-height: 1.2;
+}
+
+.image-card img {
+  width: 100%;
+  /* height: 427px; */
+  height: 22.2vw;
+  object-fit: cover;
+  /* border-radius: 8px; */
+  border-radius: 0.2vw;
+}
+
+.image-card h4 {
+  margin: 10px 0 5px;
+}
+
+.image-card p {
+  font-size: 14px;
+ 
+}
+
+.more-btn-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.more-btn-wrapper button {
+  margin: 0 40px 0 40px;
+  width: 108px;
+  background-color: transparent;
+  color: #04a1ff;
+  border: 1px solid #04a1ff;
+  border-radius: 50px;
+  padding: 8px 22px 8px 22px;
+  cursor: pointer;
+}
+
 
 .btn_products {
   border: 1px solid #c1c1c1;

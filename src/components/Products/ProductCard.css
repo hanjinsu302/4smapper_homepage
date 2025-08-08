@@ -5,10 +5,12 @@
 
 .Products_section2_items > div {
   display: flex;
-  gap: 40px;
+  /* gap: 40px; */
+  gap: 2.1vw;
   overflow-x: auto;
   scroll-behavior: smooth; /* 부드러운 스크롤 */
-  padding: 40px;
+  /* padding: 40px; */
+  padding: 2.1vw;
 }
 .Products_section2_items > div::-webkit-scrollbar {
   display: none;
@@ -35,13 +37,18 @@
   transition: 0.5s;
 }
 .Products_section2_items img {
-  width: 450px;
-  height: 300px;
+  /* width: 450px; */
+  width: 23.45vw;
+  /* height: 300px; */
+  height: 15.55vw;
 }
 .Products_section2_items_title {
-  font-size: 32px;
-  margin-bottom: 16px;
+  /* font-size: 32px; */
+  font-size: 1.65vw;
+  /* margin-bottom: 16px; */
+  margin-bottom: 0.85vw;
 }
 .Products_section2_items_description {
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 0.75vw;
 }

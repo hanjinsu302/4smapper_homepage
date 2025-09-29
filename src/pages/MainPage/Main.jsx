@@ -27,27 +27,29 @@ import TUNDRA_Logo from '../../images/main/Logo/TUNDRA_Logo.png';
 
 
 const Main = () => {
-  const { t } = useTranslation('Main'); // Main namespace 사용
+  const { t } = useTranslation('main'); // Main namespace 사용
   const logos = [SHARE_Logo, CHCNAV_Logo, beyless_Logo, DJI_Logo, FIXAR_Logo, Singular_Logo,RIEBO_Logo,TUNDRA_Logo];
   
 
   return (
     <>
     <Header/>
+    <div className='Container'>
+
+    
         <div className='Main_Section'>
           <img className='main_banner_img' src={mainbanner}/>
           <div className='main_banner_info'>
-            <div className='main_banner_info_main'>Capture Collect Clear</div>
-            <div className='main_banner_info_sub'>Smart Future with 4S Mapper</div>
+            <div className='main_banner_info_main'>{t("mainsection.des")}</div>
+            <div className='main_banner_info_sub'>{t("mainsection.des1")}</div>
           </div>
         </div>
         <div className='Main_info_section'>
           <div className='Main_info_section_container'>
             OUR CORE THING
             <img src={maininfo1} className='Main_info_img_1'/>
-            <div className='Main_info_title'>WE TAKE PICTURES FROM ABOVE</div>
-            <div className='Main_info_sub'>We photograph the road with a drone. Then, we use artificial intelligence to make the information we want.
-            Our goal is to use this information to obtain accurate data on the road.</div>
+            <div className='Main_info_title'>{t("mainsection.title")}</div>
+            <div className='Main_info_sub'>{t("mainsection.sub")}</div>
             <div className='Main_info_sub2'>About Us</div>
           </div>
         </div>
@@ -59,8 +61,8 @@ const Main = () => {
                 <div className='Main_info_section2_info_box'>
                   <div className='Main_info_section2_info_box_title'
                   >DaaS: Drone as a Service</div>
-                  <div className='Main_info_section2_info_box_sub'>Provides 3D and Pano from drone images that are used for building spatial information in a form of URL for easier access to analyses and reports.</div>
-                  <div className='Main_info_section2_info_box_more'>More 〉</div>
+                  <div className='Main_info_section2_info_box_sub'>{t("section2.daas")}</div>
+                  {/* <div className='Main_info_section2_info_box_more'>More 〉</div> */}
                 </div>
 
               </div>
@@ -68,17 +70,17 @@ const Main = () => {
                 <img className='Main_info_section2_box_img' src={mainplatformimg2}/>
                 <div className='Main_info_section2_info_box'>
                   <div className='Main_info_section2_info_box_title'
-                  >DTM</div>
-                  <div className='Main_info_section2_info_box_sub'>Provides novel solutions of aerial, water surface & ground surveying with drone’s AI brain and eyes.Drone images become more valuable with data science technology.</div>
-                  <div className='Main_info_section2_info_box_more'>More 〉</div>
+                  >DTM: Drone Traffic Mapper / Drone to Mapper</div>
+                  <div className='Main_info_section2_info_box_sub'>{t("section2.dtm")}</div>
+                  {/* <div className='Main_info_section2_info_box_more'>More 〉</div> */}
                 </div>
               </div>
               <div className='Main_info_section2_box'>
                 <div className='Main_info_section2_info_box'>
                   <div className='Main_info_section2_info_box_title'
-                  >DaaS: Drone as a Service</div>
-                  <div className='Main_info_section2_info_box_sub'>Provides 3D and Pano from drone images that are used for building spatial information in a form of URL for easier access to analyses and reports.</div>
-                  <div className='Main_info_section2_info_box_more'>More 〉</div>
+                  >CfSM: Car-free Street Mapping</div>
+                  <div className='Main_info_section2_info_box_sub'>{t("section2.cfsm")}</div>
+                  {/* <div className='Main_info_section2_info_box_more'>More 〉</div> */}
                 </div>
                 <img className='Main_info_section2_box_img' src={mainplatformimg3}/>
 
@@ -86,9 +88,9 @@ const Main = () => {
               <div className='Main_info_section2_box'>
                 <div className='Main_info_section2_info_box'>
                   <div className='Main_info_section2_info_box_title'
-                  >DaaS: Drone as a Service</div>
-                  <div className='Main_info_section2_info_box_sub'>Provides 3D and Pano from drone images that are used for building spatial information in a form of URL for easier access to analyses and reports.</div>
-                  <div className='Main_info_section2_info_box_more'>More 〉</div>
+                  >AfGG: Auto-labeling 5G Geo-spatial Information HDS Map</div>
+                  <div className='Main_info_section2_info_box_sub'>{t("section2.afgg")}</div>
+                  {/* <div className='Main_info_section2_info_box_more'>More 〉</div> */}
                 </div>
                 <img className='Main_info_section2_box_img' src={mainplatformimg4}/>
 
@@ -96,19 +98,18 @@ const Main = () => {
           </div>
           <div className='Main_info_section3'>
             <div className='Main_info_section3_contents'>
-              <div>Solution</div>
               <div className='Main_info_section3_box'>
                 <div className='Main_info_section3_box_content1'>
                   <div className='Main_info_section3_box_title'>CfSM (Car-free Street Mapping)</div>
-                  <div className='Main_info_section3_box_sub'>Removes car images on the road using the deep learning technique and drone-taken images.</div>
+                  <div className='Main_info_section3_box_sub'>{t("section3.cfsm")}</div>
                   <div className='Main_info_section3_box_img_box'>
-                    <img className='Main_info_section3_box_img' src={main_cfsm} />
+                    <img className='Main_info_section3_box_img' src={main_cfsm} style={{marginTop:'2vw'}} />
                   </div>
                   
                 </div>
                 <div className='Main_info_section3_box_content2'>
                 <div className='Main_info_section3_box_title_2'>3D Modeling</div>
-                  <div className='Main_info_section3_box_sub_2'>Creates 2.5D to 3D models from drone-taken images using multi-directional cameras.</div>
+                  <div className='Main_info_section3_box_sub_2'>{t("section3.3d")}</div>
                   <div className='Main_info_section3_box_img_box'>
                     <img className='Main_info_section3_box_img' src={main_3d} />
                   </div>
@@ -121,14 +122,14 @@ const Main = () => {
                     <img className='Main_info_section3_box_img' src={main_hd} />
                   </div>
                 <div className='Main_info_section3_box_title_d'>HD Safety Map</div>
-                  <div className='Main_info_section3_box_sub_d'>CGenerates simulation-ready data for autonomous vehicles by extracting crosswalks, center lines, and stop lines from real drone images.</div>
+                  <div className='Main_info_section3_box_sub_d'>{t("section3.hd")}</div>
                 </div>
                 <div className='Main_info_section3_box_content1'>
                 <div className='Main_info_section3_box_img_box'>
                     <img className='Main_info_section3_box_img' src={main_auto} />
                   </div>
                   <div className='Main_info_section3_box_title_2_d'>Automatic Data Processing</div>
-                  <div className='Main_info_section3_box_sub_2_d'>Automates the data processing steps using distributed Node-based architecture.</div>
+                  <div className='Main_info_section3_box_sub_2_d'>{t("section3.auto")}</div>
                 </div>
               </div>
             </div>
@@ -157,10 +158,11 @@ const Main = () => {
         <div className='Main_info_section6'>
           <img className='main_banner_img' src={mainbanner2}/>
           <div className='Main_info_section6_contents'>
-            <div className='Main_info_section6_contents_title'>Automate road maintenance with 4S Mapper and build a safer city</div>
+            <div className='Main_info_section6_contents_title'>{t("section6.des")}</div>
             <div className='Main_info_section6_contents_sub'>CONTACT</div>
           </div>
         </div>
+    </div>
     <Footer/>
     </>  
   );

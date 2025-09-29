@@ -1,3 +1,7 @@
+.Container{
+  white-space: pre-line;
+ 
+}
 .Banner_img {
   width: 100%;
   /* height: 600px; */
@@ -108,11 +112,11 @@
 
 .more-btn-wrapper {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0.5vw;
 }
 
 .more-btn-wrapper button {
-  margin: 0 40px 0 40px;
+  margin: 0 2vw;
   width: 108px;
   background-color: transparent;
   color: #04a1ff;
@@ -132,11 +136,11 @@
 }
 .background_white {
   background-color: #ffffff;
-  padding: 100px 16px 200px 16px;
+  padding: 5vw 0.8vw;
 }
 .Products_section2_description {
-  width: 960px;
-  height: 112px;
-  font-size: 40px;
+  width: 48vw;
+  height: 6vw;
+  font-size: 2vw;
   font-weight: bold;
 }

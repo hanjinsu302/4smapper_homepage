@@ -4,13 +4,18 @@ import './Platform.css'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import platformbannerimg from '../../images/platform/platform_benner.png'
+import daas_3d from '../../images/platform/daas_3d.png'
+import daas_pano from '../../images/platform/daas_pano.png'
+import cfsm_2 from '../../images/platform/cfsm_2.png'
+import platform_dtmml from '../../images/platform/platform_dtmml.png'
+import platform_dtmai from '../../images/platform/platform_dtmai.png'
+import platform_afgg from '../../images/platform/platform_afgg.png'
+import { NavLink,useLocation } from 'react-router-dom';
 
 const Platform = () => {
-const { t } = useTranslation('Platform'); // Platform namespace 사용
-
+const { t } = useTranslation('platform'); // Platform namespace 사용
 
 return (
-
 <>
   <Header />
   <div className='Header_Block'></div>
@@ -21,49 +26,113 @@ return (
     <div className='Platfrom_Section1_Contents'>
       <div className='Platfrom_Section1_Contents_Title_Box'>
         <div className='Platfrom_Section1_Contents_Title'>DaaS</div>
-        <div className='Platfrom_Section1_Contents_Sub'>Drone as a Service</div>
+        <div className='Platfrom_Section1_Contents_Sub'>{t('section1.daas.des')}</div>
       </div>
       <div className='Platfrom_Section1_Contents_Des'>
-        Provides 3D and Pano from drone images that are used for building spatial information in a form of URL for easier access to analyses and reports.
+        {t('section1.daas.des1')}
       </div>
       <div className='Platfrom_Section1_Contents_Info_Box'>
         <div className='Platfrom_Section1_Contents_Info_Title_Box'>
           <div className='Platfrom_Section1_Contents_Info_Title'>DaaS 3D</div>
-          <div className='Platfrom_Section1_Contents_Info_Sub'>Uploads the images taken for building 3D spatial data to the platform with simple 'drag & drop'. ​The whole process automated with a parallel processing-based network provides various data analysis and reports.</div>
+          <div className='Platfrom_Section1_Contents_Info_Sub'>{t('section1.daas3d.des')}</div>
+          
         </div>
-        <div className='Platfrom_Section1_Contents_Info_Img_Box'> </div>
+        <div className='Platfrom_Section1_Contents_Info_Img_Box'>
+          <img src={daas_3d} className='daas_3d_img' />
+        </div>
         <div className='Platfrom_Section1_Contents_Info_Pano_Box'>
           <div className='Platfrom_Section1_Contents_Info_Pano_Info_Box'>
             <div className='Platfrom_Section1_Contents_Info_Pano_Info_Title'>DaaS Pano(360°)</div>
-            <div className='Platfrom_Section1_Contents_Info_Pano_Info_Sub'>Makes HTML5-based results from several images going through 360° Panoramic platform and a real-time auto-process (with mosaic and color correction process, etc.) which automatically sends the result to users in any OS & device.</div>
+            <div className='Platfrom_Section1_Contents_Info_Pano_Info_Sub'>{t('section1.daaspano.des')}</div>
+            <NavLink to="/DaasPano">
+              <div className='Platfrom_Section1_Contents_More_btn'>
+                more 〉
+              </div>
+            </NavLink>
           </div>
-          <div className='Platfrom_Section1_Contents_Info_Pano_Img_Box'> </div>
+          <div className='Platfrom_Section1_Contents_Info_Pano_Img_Box'>
+            <img src={daas_pano} className='daas_pano_img' />
+            
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div className='Platfrom_Section2'>
-  <div className='Platfrom_Section2_Contents'>
-  <div className='Platfrom_Section2_Contents_Title_Box'>
+    <div className='Platfrom_Section2_Contents'>
+      <div className='Platfrom_Section2_Contents_Title_Box'>
         <div className='Platfrom_Section2_Contents_Title'>DTM </div>
-        <div className='Platfrom_Section2_Contents_Sub'>Drone Traffic Mapper / Drone to Mapper</div>
-  </div>
-  <div className='Platfrom_Section2_Contents_Des'>
-  DTM provides novel solutions of aerial, water surface & ground surveying with drone’s Artificial Intelligence (AI) brain and eyes.
-  Drone images become more valuable with Data Science Technology.
+        <div className='Platfrom_Section2_Contents_Sub'>{t('section2.dtm.des')}</div>
       </div>
-      <div className='Platfrom_Section2_Contents_Info_Box'>
-
+      <div className='Platfrom_Section2_Contents_Des'>
+        {t('section2.dtm.des1')}
       </div>
+      <div className='Platfrom_Section2_Infobox'>
+        <div className='Platfrom_Section2_InfoContentsbox'>
+        <div className='Platfrom_Section2_InfoContentsbox_imgbox'>
+          <img src={platform_dtmml} alt="asda" className='Platfrom_Section2_InfoContentsbox_img'/>
+        </div>
+        <div className='Platfrom_Section2_InfoContentsbox_desbox'>
+        <div className='Platfrom_Section2_InfoContentsbox_desTitle'>
+        DTM ML
+          </div>
+          <div className='Platfrom_Section2_InfoContentsbox_des'>
+       {t("section2.dtmml.des")}
+          </div>
 
-
+        </div>
+      </div>
+      <div className='Platfrom_Section2_InfoContentsbox2'>
+        <div className='Platfrom_Section2_InfoContentsbox_desbox'>
+        <div className='Platfrom_Section2_InfoContentsbox_desTitle'>
+        DTM AI
+          </div>
+          <div className='Platfrom_Section2_InfoContentsbox_des2'>
+       {t("section2.dtmai.des")}
+          </div>
+        </div>
+        <div className='Platfrom_Section2_InfoContentsbox_imgbox'>
+          <img src={platform_dtmai} alt="asda" className='Platfrom_Section2_InfoContentsbox_img'/>
+        </div>
+      </div>
+      </div>
+    </div>
   </div>
-
+  <div className='Platfrom_Section3'>
+    <div className='Platfrom_Section3_Contents_Info_Box'>
+  <div className='Platfrom_Section3_Contents'>
+  <div className='Platfrom_Section1_Contents_Title_Box'>
+        <div className='Platfrom_Section1_Contents_Title'>CfSM</div>
+        <div className='Platfrom_Section1_Contents_Sub'>Car-free Street Mapping</div>
+      </div>
+        <img src={cfsm_2} className='daas_pano_img' />
+        <div className='Platfrom_Section3_Contents_DesBox'>
+          <div className='Platfrom_Section3_Contents_Des_1'>
+            {t('section2.cfsm.des')}
+          </div>
+          <div className='Platfrom_Section3_Contents_Des_2'>
+            Car-free Street Mapping
+          </div>
+        </div>
+      </div>
+      </div>
   </div>
-
+  <div className='Platform_Section4'>
+    <div className='Platfrom_Section4_Contents'>
+    <div className='Platfrom_Section1_Contents_Title_Box'>
+        <div className='Platfrom_Section1_Contents_Title'>AfGG</div>
+        <div className='Platfrom_Section1_Contents_Sub'>Auto-labeling 5G Geo-spatial Information HDS Map</div>
+      </div>
+    <div>
+    <div className='Platfrom_Section4_Contents_DesBox'>
+            {t('section2.afgg.des')}
+        </div>
+    </div>
+    <img className='afgg_img' src={platform_afgg} />
+    </div>
+  </div>
   <Footer />
 </>
-
 );
 };
 

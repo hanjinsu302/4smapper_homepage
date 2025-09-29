@@ -27,13 +27,13 @@ const Footer = () => {
             </div>
             <div className='footer_info'>
               <div>
-                (13449) Room 220, 42 Changup-ro, Sujeong-gu, Seongnam-si, Gyeonggi-do (Gyeonggi Enterprise Growth Center)
+              {t('info.adress')}
               </div>
               <div>
                 info@4SMapper.com
               </div>
               <div>
-                +82 70 8806 0670
+                +82 70 8721 4396
               </div>
               <div>
                 +82 504 400 4396

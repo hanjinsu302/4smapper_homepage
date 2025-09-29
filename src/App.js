@@ -7,6 +7,7 @@ import Products from './pages/ProductsPage/Products';
 import About from './pages/AboutPage/About';
 import Contact from './pages/ContactPage/Contact';
 import Main from './pages/MainPage/Main';
+import DaasPano from './pages/DaasPanoPage/DaasPanoPage';
 
 
 const App = () => (
@@ -18,6 +19,7 @@ const App = () => (
       <Route path="/Products" element={<Products />} />
       <Route path="/About" element={<About />} />
       <Route path="/Contact" element={<Contact />} />
+      <Route path="/DaasPano" element={<DaasPano />} />
     </Routes>
   </BrowserRouter>
 );

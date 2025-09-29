@@ -1,3 +1,8 @@
+.Container{
+    white-space: pre-line;
+    line-height: 1.4;
+    font-weight: 600;
+}
 .Main_Section{
     width: 100%;
     height: 56.4vw;
@@ -32,6 +37,7 @@
 .main_banner_info_sub{
     /* font-size: 40px; */
     font-size: 2.08vw;
+    
 
 }
 .Main_info_section{
@@ -39,7 +45,7 @@
     /* height: 1403px; */
     height: 73vw;
     display: flex;
-    
+    background-color: white;
     justify-content: center;
 }
 .Main_info_section_container{
@@ -49,6 +55,7 @@
     /* font-size: 24px; */
     font-size: 1.25vw;
     padding-top: 8vw;
+    color: white;
 }
 .Main_info_img_1{
     width: 100%;
@@ -61,7 +68,7 @@
     /* margin-top: 80px; */
     margin-top: 4.2vw;
     text-align: right;
-
+    color: black;
 }
 .Main_info_sub{
     /* font-size: 24px; */
@@ -69,12 +76,16 @@
     /* margin-top: 24px; */
     margin-top: 1.3vw;
     text-align: right;
+    color: black;
 }
 .Main_info_sub2{
     font-size: 1.25vw;
     margin-top: 1vw;
-    color: blue;
+    color: #04A1FF;
     text-align: right;
+    padding: 0.3vw;
+    
+
    
 }
 .Main_info_section2{
@@ -92,7 +103,7 @@
     width: 65vw;
    
     /* margin-top: 200px; */
-    margin-top: 10vw;
+    padding-top: 5vw;
 
 }
 .Main_info_section2_box{
@@ -124,6 +135,7 @@
     /* margin-top: 32px; */
     margin-top: 1.6vw;
     line-height: 2vw;
+    
 }
 .Main_info_section2_info_box_more{
     width: max-content;
@@ -132,7 +144,10 @@
     border: 1px solid #04A1FF;
     color: #04A1FF;
     border-radius: 1vw;
-    font-size: 1.2vw;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .Main_info_section3{
@@ -145,10 +160,9 @@
 
 .Main_info_section3_contents{
     /* width: 1440px; */
-    width: 65vw;
+    width: 90vw;
     /* margin-top: 200px; */
     margin-top: 5vw;
-    
     display: flex;
     flex-direction: column;
 
@@ -161,20 +175,19 @@
     
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2vw;
 }
 .Main_info_section3_box_content1{
     height:100%;
-    background-color: #04A1FF;
-    
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    margin-left: 0.25vw; 
+    margin-right: 0.25vw;   
 }
 .Main_info_section3_box_content2{
     height:100%;
-    background-color: #c9ff04;
+    margin-left: 0.25vw; 
+    margin-right: 0.25vw;
+    
 }
 .Main_info_section3_box_title{
     /* font-size: 40px; */
@@ -184,7 +197,7 @@
 }
 .Main_info_section3_box_sub{
     /* font-size: 14px; */
-    font-size: 0.7vw;
+    font-size: 1vw;
     
 }
 .Main_info_section3_box_title_2{
@@ -196,7 +209,7 @@
 }
 .Main_info_section3_box_sub_2{
     /* font-size: 14px; */
-    font-size: 0.7vw;
+    font-size: 1vw;
     text-align: right;
     margin-right: 1vw;
 }
@@ -207,53 +220,46 @@
     justify-content: center;
 }
 .Main_info_section3_box_img{
-    width: 96%;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    width: 100%;
+    margin-top: 0.5vw;
 }
 
 .Main_info_section3_box_title_d{
     /* font-size: 40px; */
     font-size: 2.08vw;
-    margin-left: 1vw;
 
 }
 .Main_info_section3_box_sub_d{
     /* font-size: 14px; */
-    font-size: 0.7vw;
-    margin-left: 1vw;
-    margin-bottom: 1vw;
+    font-size: 1vw;
 }
 .Main_info_section3_box_title_2_d{
     /* font-size: 40px; */
     font-size: 2.08vw;
     text-align: right;
-    margin-right: 1vw;
-    margin-top: 1vw;
-
 }
 .Main_info_section3_box_sub_2_d{
     /* font-size: 14px; */
-    font-size: 0.7vw;
+    font-size: 1vw;
     text-align: right;
-    margin-right: 1vw;
 }
 .Main_info_section4{
-    margin-top: 10vw;
+    padding-top: 5vw;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.08vw;
-    gap: 2vw;
+    gap: 1vw;
+    background-color: white;
     
 }
 .Main_info_section4_box_img{
-    width: 40%;
+    width: 45%;
 }
 
 .Main_info_section5 {
-    margin-top: 10vw;
+    padding-top: 5vw;
     width: 100%;
     height: 10vw;
     display: flex;
@@ -262,6 +268,7 @@
     justify-content: space-around;
     font-size: 2.08vw;
     overflow: hidden;
+    background-color: white;
   }
   
   .Main_info_section5_contents_title {

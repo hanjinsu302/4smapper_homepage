@@ -1,0 +1,31 @@
+{
+    "section1":{
+        "des":"Deep Learning and Drone-based Automated Image Removal Solution for Vehicles on the Road.",
+        "des1":"An innovative service that will replace Automated traditional road monitoring system."
+    },
+    "step1":{
+        "des":"Capture enough data to create a dataset using the drone.",
+        "des1":"The data type must be in image format."
+    },
+    "step2":{
+        "des":"Combine tile data into a single road image for processing."
+    },
+    "step3":{
+        "des":"Run the dataset through the CfSM solution to remove cars and shadows.\nThe result will be a clean, undistorted road image." 
+    },
+    "step4":{
+        "des":"Monitor the status of the road using CfSM processed image.\nDetect the condition of the road by running an analysis on the server." 
+    },
+    "section3":{
+        "des":"Uploads the images taken for building 3D spatial data to the platform with simple 'drag&drop'.",
+        "des1":"The whole process automated with a parallel processing-based network provides various data analysis and reports."
+    },
+    "section4":{
+        "des":"AfGG solution creates an High-Definition Safety Map with road marking information.",
+        "des1":"AfGG solution utilizes DTM ML to auto label the road markings (double yellow line, crosswalk, stop line, etc.) or detect risk factors (pothole, crack, etc.) to gather road information."
+    },
+    "section5":{
+        "des":"Distributes data processing step using the Node to automate the processing."
+    }
+
+}

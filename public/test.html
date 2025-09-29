@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timeline Scroll with Animated Nav</title>
+<style>
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+
+  body {
+    margin: 0;
+    font-family: 'Pretendard';
+    color: #fff;
+  }
+
+  .wrapper {
+  display: flex;
+  flex-direction: column; /* 세로로 쌓이게 변경 */
+}
+
+  /* 네비게이션 스타일 */
+  .nav__wrapper {
+    position: fixed;
+    height: 100vh;
+    /* width: 200px; */
+    padding-left: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+    /* overflow-y: auto; */
+    background-color: #202124;
+  }
+
+  .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav li {
+    position: relative;
+    margin-bottom: 1em;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav li::after {
+    content: '';
+    display: block;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    height: 280px;
+    width: 20px;
+    position: absolute;
+    left: -30px;
+    top: 15px;
+    transition: border-color 0.5s;
+  }
+
+  .nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  .nav a:hover {
+    padding-left: 1em;
+  }
+
+  .nav li.active a {
+    pointer-events: none;
+  }
+
+  .nav li.active .nav__counter {
+    font-size: 48px;
+  }
+
+  .nav li.active .nav__title {
+    height: 20px;
+    opacity: 1;
+    overflow: visible;
+  }
+
+  .nav li.active .nav__body {
+    height: 50px;
+    opacity: 1;
+    overflow: visible;
+  }
+
+  .nav__counter {
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+
+  .nav__title {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0 0 0.25em;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease-out, opacity 0.3s ease-out;
+  }
+
+  .nav__body {
+    font-weight: 100;
+    font-size: 18px;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease-out, opacity 0.3s ease-out;
+  }
+
+  .DroMii_His_Log{
+    width: 55vw;
+  }
+
+  .DroMii_CfSM_Img{
+    width: 28vw;
+  }
+
+  /* 섹션 스타일 */
+  section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+  transition: background 0.5s;
+
+}
+
+  /* 섹션 색상 정의 */
+  #section1 { background-color: #202124; --nav-color: #F64747; }
+  #section2 { background-color: #202124; --nav-color: #F9690E; }
+  #section3 { background-color: #202124; --nav-color: #9B59B6; }
+  #section4 { background-color: #202124; --nav-color: #03C9A9; }
+  #section5 { background-color: #202124; --nav-color: #22A7F0; }
+  #section6 { background-color: #202124; --nav-color: #ffcc00; }
+  #section7 { background-color: #202124; --nav-color: #ffcc00; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <nav class="nav__wrapper" id="navbar-example">
+    <ul class="nav">
+      <li class="active">
+        <a href="#section1">
+          <span class="nav__counter">2017</span>
+          <h3 class="nav__title">09</h3>
+          <p class="nav__body"><strong>드로미 설립</strong>.</p>
+        </a>
+      </li>
+      <li>
+        <a href="#section2">
+          <span class="nav__counter">2020</span>
+          <h3 class="nav__title">03</h3>
+          <p class="nav__body">중국 법인 설립 (得路秘)</p>
+          <h3 class="nav__title">04</h3>
+          <p class="nav__body">드론 실증도시 구축사업 (고양)</p>
+        </a>
+      </li>
+      <li>
+        <a href="#section3">
+          <span class="nav__counter">2021</span>
+          <h3 class="nav__title">05</h3>
+          <p class="nav__body">드론 실증도시 구축사업 (영월)</p>
+        </a>
+      </li>
+      <li>
+        <a href="#section4">
+          <span class="nav__counter">2022</span>
+          <h3 class="nav__title">06</h3>
+          <p class="nav__body">CfSM (Car-free Street Mapping) </p>
+        </a>
+      </li>
+      <li>
+        <a href="#section5">
+          <span class="nav__counter">2023</span>
+          <h3 class="nav__title">03</h3>
+          <p class="nav__body">드론 실증도시 구축사업 (서울)</p>
+          <h3 class="nav__title">12</h3>
+          <p class="nav__body">제 6회 서울시 드론 활용 경진 대회<br/>(최우수상)</p>
+        </a>
+      </li>
+      <li>
+        <a href="#section6">
+          <span class="nav__counter">2024</span>
+          <h3 class="nav__title">05</h3>
+          <p class="nav__body">국가인공지능대전,<br/>AI 국방 혁신 도시 포럼 (대상)</p>
+          <h3 class="nav__title">10</h3>
+          <p class="nav__body">중소기업혁신개발산업 (자유공모전)</p>
+        </a>
+      </li>
+      <li>
+        <a href="#section7">
+          <span class="nav__counter">2025</span>
+          <h3 class="nav__title">01</h3>
+          <p class="nav__body">민관협력 오픈이노베이션 지원사업<br/>성과평가 (우수)</p>
+          <h3 class="nav__title">06</h3>
+          <p class="nav__body">경기도 AI 실증 지원사업</p>
+          <h3 class="nav__title">08</h3>
+          <p class="nav__body">제 1기 공간정보 성장도약 패키지 선정</p>
+          
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="section1">
+    <img class="DroMii_His_Log" src="./html/DroMii_His_Log.png">
+
+  </section>
+  <section id="section2">2020</section>
+  <section id="section3">
+    <img class="DroMii_His_Log" src="./html/yeongwol_pano.png">
+    <p>(3D 지도 구축 및 RM 기반 GCP 통합 포인트별 360도 파노라마 설정)</p>
+  </section>
+  <section id="section4">
+     <img class="DroMii_CfSM_Img" src="./html/cfsm.jpeg">
+    <p>(CfSM (Car-free Street Mapping)특허 등록 및 벤처나라, 창업혁신조달 상품 지정)</p>
+  </section>
+  <section id="section5">
+    <img class="DroMii_His_Log" src="./html/worldcup_pano.png">
+    <p>(AI 기반 드론 데이터 (영상) 실시간 사물 인식 및 전송 시스템)</p>
+  </section>
+  <section id="section6">2024</section>
+  <section id="section7">2025</section>
+</div>
+
+<script>
+  // Smooth Scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
+  // IntersectionObserver for active nav + animated nav color
+  const sections = document.querySelectorAll("section");
+  const navItems = document.querySelectorAll(".nav li");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        navItems.forEach(li => li.classList.remove("active"));
+        const id = entry.target.getAttribute("id");
+        const currentNav = document.querySelector(`.nav a[href="#${id}"]`);
+        if(currentNav){
+          currentNav.parentElement.classList.add("active");
+          // 라인 색상 변경
+          currentNav.parentElement.style.setProperty('--line-color', getComputedStyle(entry.target).getPropertyValue('--nav-color'));
+          currentNav.parentElement.querySelector('::after'); // CSS ::after는 JS에서 직접 스타일 적용 불가, 별도 class로 구현 가능
+        }
+      }
+    });
+  }, { threshold: 0.6 });
+
+  sections.forEach(section => observer.observe(section));
+</script>
+</body>
+</html>

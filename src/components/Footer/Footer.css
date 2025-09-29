@@ -19,7 +19,8 @@
 }
 .footer_smlogo{
     /* width: 178px; */
-    width: 9.3vw;
+    width: 6vw;
+    margin-right: 3vw;
 }
 
 .footer_context{

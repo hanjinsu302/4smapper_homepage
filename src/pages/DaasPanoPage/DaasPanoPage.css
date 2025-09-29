@@ -1,0 +1,80 @@
+.DaasPanoContainer{
+    width: 100%;
+    display: flex;
+    background-color: white;
+
+}
+.DaasPanoSetion1{
+    width: 50%;
+    position: relative;
+
+}
+.DaasPanoSetion2{
+    width: 50%;
+     box-sizing: border-box;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap:4vw;
+    
+
+}
+.daaspano_bg{
+    width: 100%;
+   
+}
+.daaspano_title{
+    position: absolute;
+    bottom:80px;
+    text-align: right;
+    right: 0px;
+    font-weight: 800;
+    font-size: 2vw;
+
+}
+.daaspano_des{
+    position: absolute;
+    bottom: 30px;
+    text-align: right;
+    right: 0px;
+    font-size: 1.2vw;
+    font-weight: 600;
+
+}
+.DaasPanoSetion2_Box_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.DaasPanoSetion2_Box_2{
+    display: flex;
+    gap:4vw;
+    justify-content: center;
+}
+
+
+.DaasPano_Img_box{
+    width: 19vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.Img_Title{
+    z-index: 2;
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5vw;
+    padding: 8px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.Img_Title:hover{
+    background-color: #E0E0E0;
+}
+.pano_bg{
+    width: 100%;
+    
+}

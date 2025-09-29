@@ -1,0 +1,25 @@
+{
+    "mainsection":{
+        "des":"Capture Collect Clear",
+        "des1":"Smart Future with 4S Mapper",
+        "title":"WE TAKE PICTURES FROM ABOVE",
+        "sub":"We photograph the road with a drone. Then, we use artificial intelligence to make the information we want. Our goal is to use this information to obtain accurate data on the road."
+    },
+    "section2":{
+        "daas":"Provides 3D and Pano from drone images that are used for building spatial information in a form of URL for easier access to analyses and reports.",
+        "dtm":"Provides novel solutions of aerial, water surface & ground surveying with drone’s AI brain and eyes.Drone images become more valuable with data science technology.",
+        "cfsm":"Removes cars using deep learning, and integrates those images to create car-free street maps.Can be used for HD Safety Maps and self-driving simulation.",
+        "afgg":"Creates High-Definition Safety Maps with auto-labeled road markings (crosswalks, stop lines, etc.) and detects road risks like potholes and cracks."
+
+    },
+    "section3":{
+        "cfsm":"Removes car images on the road using the deep learning technique and drone-taken images.",
+        "3d":"Creates 2.5D to 3D models from drone-taken images using multi-directional cameras.",
+        "hd":"CGenerates simulation-ready data for autonomous vehicles by extracting crosswalks, center lines, and stop lines from real drone images.",
+        "auto":"Automates the data processing steps using distributed Node-based architecture."
+    },
+    "section6":{
+        "des":"Automate road maintenance with 4S Mapper and build a safer city"
+    }
+
+}

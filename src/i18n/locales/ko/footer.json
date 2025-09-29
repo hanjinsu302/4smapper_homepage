@@ -1,6 +1,7 @@
 {
-    "contact": "연락처",
-    "privacy": "개인정보 처리방침",
+   "info": {
+     "adress":"13449 경기도 성남시 수정구 창업로 40번길 30, 판교IT센터, B104호 / 4S Mapper (HQ)"
+   },
     "nav": {
       "platform": "플랫폼",
       "solution": "솔루션",

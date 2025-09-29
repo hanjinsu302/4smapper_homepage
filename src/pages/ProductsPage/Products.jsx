@@ -17,14 +17,15 @@ const Products = () => {
 
   const currentImages = imageData[activeCategory] || [];
   const visibleImages = showAll ? currentImages : currentImages.slice(0, 6);
-  const { t } = useTranslation("Products"); // Products namespace 사용
+  const { t } = useTranslation("products"); // Products namespace 사용
 
   return (
     <>
       <Header />
       <div className="Header_Block"></div>
+      <div className="Container"> 
       <div className="Products_Banner">
-        <div>PRODUCTS</div>
+        {/* <div>PRODUCTS</div> */}
         <img className="Banner_img" src={productsbannerimg} />
       </div>
       <div className="container">
@@ -34,8 +35,7 @@ const Products = () => {
             <div>Hardware</div>
           </div>
           <div className="Products_section1_description">
-            4S Mapper is powered by trusted drone and sensor technologies for
-            high-quality geospatial data.
+          {t('section1.des')}
           </div>
           <div className="Products_section1_items">
       {/* 버튼 클릭 시 카테고리 변경 */}
@@ -76,8 +76,7 @@ const Products = () => {
               <div>Software</div>
             </div>
             <div className="Products_section2_description">
-              4S Mapper's services are powered by greatful image generation and
-              Geo software.
+            {t('section2.des')}
             </div>
           </div>
         </div>
@@ -94,6 +93,7 @@ const Products = () => {
             ))}
           </div>
         </div>
+      </div>
       </div>
       <Footer />
     </>

@@ -1,0 +1,33 @@
+
+{
+    "section1":{
+        "daas":{
+            "des":"Drone as a Service",
+            "des1":"Provides 3D and Pano from drone images that are used for\nbuilding spatial information in a form of URL for easier access\nto analyses and reports."
+        },
+        "daas3d":{
+            "des":"Uploads the images taken for building 3D spatial data to the platform  with simple 'drag & drop'. The whole\nprocess automated with a parallel processing-based network provides various data analysis and reports."
+        },
+        "daaspano":{
+            "des":"Makes HTML5-based results from several images going\nthrough 360° Panoramic platform and a real-time\nauto-process (with mosaic and color correction process, etc.)\nwhich automatically sends the result to users in any\nOS & device."
+        }
+    },
+    "section2":{
+        "dtm":{
+            "des":"Drone Traffic Mapper / Drone to Mapper",
+            "des1":"DTM provides novel solutions of aerial, water surface & ground surveying with drone’s Artificial Intelligence (AI) brain and eyes.\nDrone images become more valuable with Data Science Technology."
+        },
+        "dtmml":{
+            "des":"When ML(machine learning) techniques are\napplied to drone image analysis, various forms\nof results can be generated, and by using drones,\ninformation about the whole and two-way lanes\nof the road can be effectively obtained beyond the limits of data\nacquisition by existing equipment."
+        },
+        "dtmai":{
+            "des":"Based on drones, artificial intelligence, big data, and\nblockchain, DTM provides a state-based management\noptimization system for various facilities\nand connections with existing systems."
+        },
+        "cfsm":{
+            "des":"Based on DTM ML, it removes cars using deep learning algorithms and\nthose integrated images are combined to make car-free street maps.\nAlso, it could be used for self-driving car simulation data\nwith the real road information and HD Safety Map."
+        },
+        "afgg":{
+            "des":"AfGG solution creates an HDS (High-Definition Safety) Map with road marking information.\nAfGG solution utilizes DTM ML to auto label the road markings (double yellow line, crosswalk, stop line, etc.) or detect risk factors (pothole, crack, etc.) to gather road information.\nThrough this technique, 4S Mapper has the ability to form a map with various road marking information/risk factors that focus on the concept of automobile safety."
+        }
+    }
+}

@@ -1,230 +1,357 @@
-.about_title{
-    position: absolute;
-    top: 40%;
-    left: 12%;
-    color: white;
-    /* font-size: 64px; */
-    font-size: 3.3vw;
+.about_title {
+  max-width: 80vw;
+  font-weight: bold;
+  font-size: 2.3vw;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: 0 auto;
+  white-space: pre-line; /* \n을 줄바꿈으로 처리 */
 }
-
-.about_title2{
-    position: absolute;
-    top: 36%;
-    left: 12%;
-    color: white;
-    /* font-size: 40px; */
-    font-size: 2vw;
-    width: 800px;
-    line-height: 1.2;
+.about_title2 {
+  font-size: 1.5vw;
 }
-.About_Section{
-    /* height: 900px; */
-    height: 46.5vw;
-    display: flex;
-    align-items: center;
-}
-
-.about_sub_title2{
-    position: absolute;
-    top: 55%;
-    left: 12%;
-    color: white;
-    font-size: 14px;
-    font-size: 1.2vw;
-    width: 800px;
-    
-}
-.about_info_img{
-    /* width: 680px; */
-    width: 35.5vw;
-    /* margin-left: 240px; */
-    margin-left: 12.5vw;
-}
-.about_info{
-    /* width: 680px; */
-    width: 35.5vw;
-    /* margin-left: 80px; */
-    margin-left: 4.1vw;
-    /* font-size: 32px; */
-    font-size: 1.67vw;
-    color: white;
-    line-height: 1.2;
-}
-.Section3{
-    width: 100%;
-    background-color: white;
+.Section3 {
+  width: 100%;
+  background-color: white;
 }
 
 .timeline {
-    position: relative;
-    padding: 20px;
-    width: 400px;
-  }
-  
-  .line {
-    position: absolute;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: #0096ff; /* 파란색 세로선 */
-    margin-left: 5px;
-  }
-  
-  .timeline-item {
-    position: relative;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .dot {
-    width: 0.5vw;
-    height: 0.5vw;
-    background: #0096ff; /* 파란색 원 */
-    border-radius: 50%;
-    margin-right: 20px;
-    z-index: 1;
-  }
-  
-  .content {
-    background: transparent; /* 필요하면 박스 배경 추가 */
-    padding: 5px 10px;
-    font-size: 16px;
-    color: black;
-  }
-  
+  position: relative;
+  padding: 20px;
+  width: 400px;
+}
 
-  .wrapper {
-    min-height: 100vh;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 300;
-    color: #fff;
-    position: relative;
-  }
-  
-  section {
-    height: 100vh;
-    font-size: 40px;
-    font-weight: 100;
-    background-color: #22A7F0;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* 배경 색상 지정 */
-  section:nth-child(1) { background: #202124; }
-  section:nth-child(2) { background: #1a1c20; }
-  section:nth-child(3) { background: #25272b; }
-  section:nth-child(4) { background: #2d2f33; }
-  section:nth-child(5) { background: #34363a; }
-  section:nth-child(6) { background: #3a3c42; }
-  
-  .nav__wrapper {
-    position: fixed;
-    height: 100%;
-    padding: 30px;
-  
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-  }
-  
-  .nav {
-    margin: 0 0 100px 30px;
-  }
-  
-  .nav__link {
-    display: block;
-    padding: 0;
-    color: #fff;
-    background: none;
-    border: none;
-    text-align: left;
-    width: 100%;
-    cursor: pointer;
-    transition: all 0.15s ease-out;
-  }
-  
-  .nav__link:hover {
-    background-color: transparent;
-    padding-left: 1em;
-  }
-  
-  .nav__link:focus {
-    outline: none;
-  }
-  
-  .nav__counter {
-    font-size: 24px;
-    transition: all 0.15s ease-out;
-  }
-  
-  .nav__title {
-    font-size: 32px;
-    font-weight: 300;
-    margin: 0 0 0.25em;
-    width: 300px;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: height 0.3s ease-out, opacity 0.2s ease-out;
-  }
-  
-  .nav__body {
-    font-weight: 100;
-    font-size: 18px;
-    width: 300px;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: height 0.3s ease-out, opacity 0.2s ease-out;
-  }
-  
-  .nav li {
-    position: relative;
-    transition: all 0.3s ease-out;
-    margin-bottom: 1em;
-  }
-  
-  .nav li:after {
-    content: '';
-    display: block;
-    border-left: 2px solid white;
-    border-top: 2px solid white;
-    height: 250px;
-    width: 20px;
-    position: absolute;
-    left: -30px;
-    top: 15px;
-  }
-  
-  .nav li.active {
-    pointer-events: none;
-    padding-left: 1em;
-  }
-  
-  .nav li.active:after {
-    width: 35px;
-    height: 400px;
-    top: 35px;
-  }
-  
-  .nav li.active .nav__counter {
-    font-size: 48px;
-  }
-  
-  .nav li.active .nav__title {
-    height: 40px;
-    opacity: 1;
-    overflow: visible;
-  }
-  
-  .nav li.active .nav__body {
-    height: 100px;
-    opacity: 1;
-    overflow: visible;
-  }
-  
+.line {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #0096ff; /* 파란색 세로선 */
+  margin-left: 5px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 0.5vw;
+  height: 0.5vw;
+  background: #0096ff; /* 파란색 원 */
+  border-radius: 50%;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+.content {
+  background: transparent; /* 필요하면 박스 배경 추가 */
+  padding: 5px 10px;
+  font-size: 16px;
+  color: black;
+}
+
+.wrapper {
+  min-height: 100vh;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  font-size: 40px;
+  font-weight: 100;
+  background-color: #22a7f0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 배경 색상 지정 */
+section:nth-child(1) {
+  background: #202124;
+}
+section:nth-child(2) {
+  background: #1a1c20;
+}
+section:nth-child(3) {
+  background: #25272b;
+}
+section:nth-child(4) {
+  background: #2d2f33;
+}
+section:nth-child(5) {
+  background: #34363a;
+}
+section:nth-child(6) {
+  background: #3a3c42;
+}
+
+.nav__wrapper {
+  position: fixed;
+  height: 100%;
+  padding: 30px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+.nav {
+  margin: 0 0 100px 30px;
+}
+
+.nav__link {
+  display: block;
+  padding: 0;
+  color: #fff;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+}
+
+.nav__link:hover {
+  background-color: transparent;
+  padding-left: 1em;
+}
+
+.nav__link:focus {
+  outline: none;
+}
+
+.nav__counter {
+  font-size: 24px;
+  transition: all 0.15s ease-out;
+}
+
+.nav__title {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0 0 0.25em;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+
+.nav__body {
+  font-weight: 100;
+  font-size: 18px;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+
+.nav li {
+  position: relative;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1em;
+}
+
+.nav li:after {
+  content: "";
+  display: block;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  height: 250px;
+  width: 20px;
+  position: absolute;
+  left: -30px;
+  top: 15px;
+}
+
+.nav li.active {
+  pointer-events: none;
+  padding-left: 1em;
+}
+
+.nav li.active:after {
+  width: 35px;
+  height: 400px;
+  top: 35px;
+}
+
+.nav li.active .nav__counter {
+  font-size: 48px;
+}
+
+.nav li.active .nav__title {
+  height: 40px;
+  opacity: 1;
+  overflow: visible;
+}
+
+.nav li.active .nav__body {
+  height: 100px;
+  opacity: 1;
+  overflow: visible;
+}
+
+.about_section_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.about_section_title > div:last-child {
+  color: #04a1ff;
+}
+
+.About_Section1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.About_Section2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* 100vh 높이 유지 */
+  background-image: url("../../images/about/about_section2_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+  box-sizing: border-box;
+  margin-bottom: 150px;
+}
+.about_vision_mission {
+  display: flex;
+  padding-bottom: 314px;
+}
+.about_vision_mission > div:first-child {
+  padding-right: 22vw;
+}
+
+.about_vision,
+.about_mission {
+  width: 35.4vw;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.3vw;
+  text-align: center;
+  white-space: pre-line; /* \n을 줄바꿈으로 처리 */
+}
+.about_title3 {
+  color: #d9d9d9;
+  text-align: center;
+  white-space: pre-line; /* \n을 줄바꿈으로 처리 */
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+.core_values {
+  max-width: 23%; /* 카드 크기 고정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.core_values > div:nth-child(2) {
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: #d9d9d9;
+}
+.core_values > img {
+  width: 23vw;
+  height: auto;
+}
+.about_description {
+  font-size: 1vw;
+  padding-top: 16px;
+  white-space: pre-line; /* \n을 줄바꿈으로 처리 */
+}
+
+.About_Section3 {
+  color: #ffffff;
+}
+
+.about_section3_values {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 150px;
+}
+
+.dashed_line {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: 80%;
+  border: none;
+  border-top: 1px dashed #ffffff;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.About_Section4 {
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.why_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 2vw;
+  max-width: 90vw;
+  padding: 0 2vw;
+}
+
+.why_card {
+  background-color: #111;
+  border: 1px solid #ffffff33;
+  border-radius: 0.5vw;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.why_card:hover {
+  transform: translateY(-0.5vw);
+  box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.6);
+}
+
+.why_img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.why_title {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #04a1ff;
+  padding: 1vw 1.5vw 0.5vw;
+}
+
+.why_description {
+  font-size: 1.5vw;
+  line-height: 1.6;
+  color: #ddd;
+  padding: 0 1.5vw 1.5vw;
+}

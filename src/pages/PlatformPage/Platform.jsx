@@ -105,7 +105,14 @@ return (
         <div className='Platfrom_Section1_Contents_Title'>CfSM</div>
         <div className='Platfrom_Section1_Contents_Sub'>Car-free Street Mapping</div>
       </div>
-        <img src={cfsm_2} className='daas_pano_img' />
+      <video
+        src="/images/cfsm.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className='daas_pano_img'
+      />
         <div className='Platfrom_Section3_Contents_DesBox'>
           <div className='Platfrom_Section3_Contents_Des_1'>
             {t('section2.cfsm.des')}

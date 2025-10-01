@@ -21,7 +21,7 @@ import CHCNAV_Logo from '../../images/main/Logo/CHCNAV_Logo.png';
 import beyless_Logo from '../../images/main/Logo/beyless_Logo.png';
 import DJI_Logo from '../../images/main/Logo/DJI_Logo.png';
 import FIXAR_Logo from '../../images/main/Logo/FIXAR_Logo.png';
-import Singular_Logo from '../../images/main/Logo/Singular_Logo.png';
+import Singular_Logo from '../../images/main/Logo/singular_Logo.png';
 import RIEBO_Logo from '../../images/main/Logo/RIEBO_Logo.png';
 import TUNDRA_Logo from '../../images/main/Logo/TUNDRA_Logo.png';
 
@@ -148,7 +148,7 @@ const Main = () => {
           <div className='logo-track'>
             {[...logos, ...logos].map((logo, idx) => (
               <div key={idx} className='logo-item'>
-                <img src={logo} alt={`partner-${idx}`} />
+                <img src={logo} alt={`partner-${idx}`}/>
               </div>
             ))}
           </div>
